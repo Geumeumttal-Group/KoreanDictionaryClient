@@ -22,10 +22,6 @@ public static class SortExtention
     /// </summary>
     public static string ToApiValue(this DictionarySort sort)
     {
-        if (sort == DictionarySort.Dictionary) 
-        {
-            return "dict";
-        }
-        return "popular";
+        return sort == DictionarySort.Dictionary ? "dict" : "popular";
     }
 }
